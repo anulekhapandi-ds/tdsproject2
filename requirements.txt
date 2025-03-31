@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+aiohttp
+pydantic
+aiofiles
+pandas
+openpyxl
+pyngrok
+mimetypes
+python-multipart
