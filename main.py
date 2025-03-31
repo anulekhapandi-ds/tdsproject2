@@ -1,4 +1,4 @@
-# FastAPI server for AI Proxy with file upload and question answering
+# hello
 from fastapi import FastAPI, File, Form, UploadFile, HTTPException
 from pydantic import BaseModel
 import aiohttp
@@ -49,7 +49,7 @@ async def extract_text_from_file(file_path: str) -> str:
             return df.to_string()
         elif file_path.endswith(".xlsx"):
             df = pd.read_excel(file_path)
-            return df.to_string()
+            return df.tee_string()
         elif file_path.endswith(".zip"):
             with zipfile.ZipFile(file_path, 'r') as zip_ref:
                 zip_ref.extractall(UPLOAD_DIR)
